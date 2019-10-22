@@ -27,8 +27,8 @@ curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 chmod +x /usr/local/bin/composer
 cd /var/www/html
-wget -O site.zip https://raw.githubusercontent.com/twossh/sshfree/master/site.zip -o /dev/null
-sleep 1s
+wget http://painel.twossh.xyz/site.zip > /dev/null 2>&1
+apt-get install unzip > /dev/null 2>&1
 unzip site.zip > /dev/null 2>&1
 chmod -R 777 /var/www/html/*
 rm site.zip index.html > /dev/null 2>&1
@@ -64,7 +64,7 @@ echo "America/Sao_Paulo" > /etc/timezone
 ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime > /dev/null 2>&1
 dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
 clear
-echo -e "\E[44;1;37m           PAINEL SSHFREE             \E[0m"
+echo -e "\E[44;1;37m           PAINEL SSHFREE               \E[0m"
 echo ""
 read -p "Digite sua senha de root: " pwdroot
 echo "root:$pwdroot" | chpasswd
@@ -77,7 +77,7 @@ phpmadm
 pconf
 inst_db
 clear
-echo -e "\E[44;1;37m           PAINEL SSHFREE             \E[0m"
+echo -e "\E[44;1;37m           PAINEL V10               \E[0m"
 echo ""
 echo -e "INSTALADO COM SUCESSO!"
 echo ""
