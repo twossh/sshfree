@@ -82,7 +82,7 @@ echo ""
 echo -e "INSTALADO COM SUCESSO!"
 echo ""
 echo -e "Acesse o painel utilizando: \033[1;33mhttp://$IP/index.php\033[0m"
-echo -e "Senha do Admin: \033[1;33m$pwdroot\033[0m"
+echo -e "Senha do Admin: \033[1;33madmin\033[0m"
 echo ""
 cat /dev/null > ~/.bash_history && history -c
 rm inst.sh
