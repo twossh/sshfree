@@ -64,7 +64,7 @@ echo "America/Sao_Paulo" > /etc/timezone
 ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime > /dev/null 2>&1
 dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
 clear
-echo -e "\E[44;1;37m           PAINEL SSHFREE               \E[0m"
+echo -e "\E[44;1;37m           PAINEL SSHFREE             \E[0m"
 echo ""
 read -p "Digite sua senha de root: " pwdroot
 echo "root:$pwdroot" | chpasswd
@@ -77,7 +77,7 @@ phpmadm
 pconf
 inst_db
 clear
-echo -e "\E[44;1;37m           PAINEL V10               \E[0m"
+echo -e "\E[44;1;37m           PAINEL SSHFREE             \E[0m"
 echo ""
 echo -e "INSTALADO COM SUCESSO!"
 echo ""
