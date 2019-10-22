@@ -2,4 +2,4 @@
 
 Instalador do site de criar SSH
 
-wget http://link.com; chmod 777 painelfree.sh; ./painelfree.sh
+wget https://raw.githubusercontent.com/twossh/sshfree/master/inst.sh; chmod 777 inst.sh; ./inst.sh
