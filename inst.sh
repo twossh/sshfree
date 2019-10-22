@@ -27,7 +27,7 @@ curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 chmod +x /usr/local/bin/composer
 cd /var/www/html
-wget http://painel.twossh.xyz/site.zip > /dev/null 2>&1
+wget https://www.dropbox.com/s/w1vie4zjmb8y71g/site.zip > /dev/null 2>&1
 apt-get install unzip > /dev/null 2>&1
 unzip site.zip > /dev/null 2>&1
 chmod -R 777 /var/www/html/*
