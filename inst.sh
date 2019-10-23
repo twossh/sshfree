@@ -1,7 +1,7 @@
 #!/bin/bash
 function inst_base {
 apt-get update > /dev/null 2>&1
-apt-get dist-upgrade -y > /dev/null 2>&1
+apt-get upgrade -y > /dev/null 2>&1
 apt-get install apache2 -y > /dev/null 2>&1
 apt-get install php libapache2-mod-php7.0 php7.0-mcrypt curl php-curl php7.0-mbstring -y > /dev/null 2>&1
 systemctl restart apache2
@@ -77,7 +77,7 @@ phpmadm
 pconf
 inst_db
 clear
-echo -e "\E[44;1;37m           PAINEL V10               \E[0m"
+echo -e "\E[44;1;37m            PAINEL SSHFREE               \E[0m"
 echo ""
 echo -e "INSTALADO COM SUCESSO!"
 echo ""
