@@ -1,7 +1,6 @@
 #!/bin/bash
+
 function inst_base {
-apt-get update > /dev/null 2>&1
-apt-get upgrade -y > /dev/null 2>&1
 apt-get install apache2 -y > /dev/null 2>&1
 apt-get install php libapache2-mod-php7.0 php7.0-mcrypt curl php-curl php7.0-mbstring -y > /dev/null 2>&1
 systemctl restart apache2
@@ -34,7 +33,6 @@ rm site.zip index.html > /dev/null 2>&1
 composer install
 composer require phpseclib/phpseclib:~2.0
 systemctl restart mysql
-clear
 }
 
 function phpmadm {
