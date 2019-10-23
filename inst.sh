@@ -30,13 +30,13 @@ cd /var/www/html
 wget https://www.dropbox.com/s/w1vie4zjmb8y71g/site.zip > /dev/null 2>&1
 apt-get install unzip > /dev/null 2>&1
 unzip site.zip > /dev/null 2>&1
-chmod -R 777 /var/www/html/*
 rm site.zip index.html > /dev/null 2>&1
 composer install
 composer require phpseclib/phpseclib:~2.0
 systemctl restart mysql
 clear
 }
+
 function phpmadm {
 cd /usr/share
 wget https://files.phpmyadmin.net/phpMyAdmin/4.8.2/phpMyAdmin-4.8.2-all-languages.zip > /dev/null 2>&1
